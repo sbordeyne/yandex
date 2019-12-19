@@ -3,10 +3,10 @@ from yandex.errors import YandexFormatError, YandexRequestError
 
 
 class Yandex:
+    """ Yandex python wrapper. """
+
     def __init__(self, api_token):
         """
-            Yandex python wrapper.
-
             :param api_token: API token from yandex.
             :type api_token: str
         """
@@ -76,9 +76,9 @@ class Yandex:
         else:
             raise YandexRequestError(resp.status_code)
 
-    def get_language_list(self, lang='en'):
+    def get_language_map(self, lang='en'):
         """
-        Gets a list of all supported languages
+        Gets a dictionary mapping of all supported languages
 
         :param lang: (default: 'en') language in which the lang names will be.
 
