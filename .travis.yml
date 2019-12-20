@@ -5,7 +5,7 @@ python:
   - "3.6"
   - "3.7"
 before_install:
-  - sudo pip3 install requests
+  - sudo pip install requests
   - sleep 3
 install:
   - python -m pip install nose coverage codecov
