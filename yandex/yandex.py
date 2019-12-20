@@ -1,5 +1,5 @@
 import requests
-from yandex.errors import YandexFormatError, YandexRequestError
+from yandex.errors import YandexFormatError, raise_exception
 
 
 class Yandex:
@@ -36,7 +36,7 @@ class Yandex:
         if resp.status_code == 200:
             return resp.json()['lang']
         else:
-            raise YandexRequestError(resp.status_code)
+            raise_exception(resp)
 
     def translate(self, text, to_lang, from_lang="", format='plain'):
         """
@@ -74,7 +74,7 @@ class Yandex:
         if resp.status_code == 200:
             return resp.json()['text'][0]
         else:
-            raise YandexRequestError(resp.status_code)
+            raise_exception(resp)
 
     def get_language_map(self, lang='en'):
         """
@@ -95,7 +95,7 @@ class Yandex:
         if resp.status_code == 200:
             return resp.json()['langs']
         else:
-            raise YandexRequestError(resp.status_code)
+            raise_exception(resp)
 
     def get_language_pairs(self, lang='en'):
         """
@@ -116,4 +116,4 @@ class Yandex:
         if resp.status_code == 200:
             return resp.json()['dirs']
         else:
-            raise YandexRequestError(resp.status_code)
+            raise_exception(resp)
