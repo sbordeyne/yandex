@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.com/Dogeek/yandex.svg?branch=master)](https://travis-ci.com/Dogeek/yandex)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/15baf69736f14416b91fadba1524bc94)](https://www.codacy.com/manual/Dogeek/yandex?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Dogeek/yandex&amp;utm_campaign=Badge_Grade)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
+[![Documentation Status](https://readthedocs.org/projects/yandex/badge/?version=latest)](https://yandex.readthedocs.io/en/latest/?badge=latest)
 
  A python wrapper around the Yandex API
 
