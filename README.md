@@ -12,7 +12,7 @@ Create a file named "test_config.py" in the tests/ folder, and paste in the foll
 API_KEY = "<your_api_token_here>"
 ```
 
-You can get an API token here : https://translate.yandex.com/developers/keys
+You can get an API token [here](https://translate.yandex.com/developers/keys)
 
 ## Usage
 
