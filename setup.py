@@ -40,7 +40,7 @@ setup(
     name="yandex",
     packages=["yandex"],
     py_modules=["yandex"],
-    version="0.0.1",
+    version="0.0.2",
     description=" A python wrapper around the Yandex API ",
     long_description=long_description,
     author="Dogeek",
